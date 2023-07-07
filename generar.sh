@@ -6,7 +6,6 @@ function generar(){
         	wget -P ./nombres  https://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv
         fi
 	
-
 	rm -fr ./imagenes
 	
 	for (( i=0; i<$1; i++ ))
