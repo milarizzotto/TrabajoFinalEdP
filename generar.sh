@@ -1,6 +1,7 @@
 #!/bin/bash
 
 function generar(){
+
 	if [ ! -e ./nombres/dict.csv ]
         then
         	wget -P ./nombres  https://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv
