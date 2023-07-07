@@ -5,6 +5,9 @@ function generar(){
         then
         	wget -P ./nombres  https://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv
         fi
+	
+	rm -fr ./imagenes
+	
 	for (( i=0; i<$1; i++ ))
 	do
 	numRandom=$(shuf -i 0-96000 -n 1)
@@ -14,7 +17,7 @@ function generar(){
 	wget -P ./imagenes/ https://source.unsplash.com/random/900%C3%97700/?person
         mv ./imagenes/index.html?person ./imagenes/$nombre.jpeg
         sleep 1
-	don
+	done
 	cd ./imagenes
 	zip imgcomprimidas *
 	rm *.jpeg
