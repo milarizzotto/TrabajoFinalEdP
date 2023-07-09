@@ -11,4 +11,3 @@ function descomprimir(){
 	fi
 }
 
-descomprimir $1 $2
