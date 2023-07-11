@@ -3,19 +3,19 @@
 source generar.sh
 source procesar.sh
 source descomprimir.sh
-#source comprimir.sh
+source comprimir.sh
 
-echo "Bienvenidos a nuestro trabajo práctico final de Entorno de Programación. Les presentamos las opciones:"
-PS3="Elija qué quiere hacer: "
-select opcion in "Generar imágenes" "Descomprimir imágenes" "Procesar imágenes" "Comprimir imágenes" "Salir"
+echo "Bienvenidos a nuestro trabajo practico final de Entorno de Programacion. Les presentamos las opciones:"
+PS3="Elija que quiere hacer: "
+select opcion in "Generar imagenes" "Descomprimir imagenes" "Procesar imagenes" "Comprimir imagenes" "Salir"
 do
 	case $opcion in
-		"Generar imágenes") echo "Elija cuántas imágenes generar" && read RESP && generar $RESP;;
-		"Descomprimir imágenes") descomprimir ./imagenes/imgcomprimidas.zip ./imagenes/suma_verificacion.txt ;;
-		"Procesar imágenes") procesar ;;
-		"Comprimir imágenes") echo "c" ;;
+		"Generar imagenes") echo "Elija cuantas imagenes generar" && read RESP && generar $RESP;;
+		"Descomprimir imagenes") descomprimir ./imagenes/imgcomprimidas.zip ./imagenes/suma_verificacion.txt ;;
+		"Procesar imagenes") procesar ;;
+		"Comprimir imagenes") comprimir ;;
 		"Salir") echo "Gracias por usar nuestro programa. Hasta luego!" && break ;;
-		*) echo "Opción no válida. Seleccione otra: " && continue ;; 
+		*) echo "Opcion no valida. Seleccione otra: " && continue ;; 
 	esac
 done
 exit 0
