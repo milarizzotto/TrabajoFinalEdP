@@ -11,7 +11,7 @@ select opcion in "Generar imagenes" "Descomprimir imagenes" "Procesar imagenes" 
 do
 	case $opcion in
 		"Generar imagenes") echo "Elija cuantas imagenes generar" && read RESP && generar $RESP;;
-		"Descomprimir imagenes") descomprimir ./imagenes/imgcomprimidas.zip ./imagenes/suma_verificacion.txt ;;
+		"Descomprimir imagenes") descomprimir ../datasets/imagenes/imgcomprimidas.zip ../datasets/imagenes/suma_verificacion.txt ;;
 		"Procesar imagenes") procesar ;;
 		"Comprimir imagenes") comprimir ;;
 		"Salir") echo "Gracias por usar nuestro programa. Hasta luego!" && break ;;
