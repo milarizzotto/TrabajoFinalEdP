@@ -2,11 +2,14 @@ FROM ubuntu:22.04
 LABEL mantainer="Carrizo, Casado, Rizzotto"
 
 RUN apt-get update && apt-get install --no-install-recommends -y 
-RUN sudo apt install imagemagick
+RUN apt upgrade -y
+RUN apt install zip -y
+RUN apt install imagemagick -y
+RUN apt-get install wget -y
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
-WORKDIR /tp
+WORKDIR /TrabajoFinalEdP
 COPY . .
-RUN chmod +x /menu.sh
-ENTRYPOINT ["bash", "/tp/scripts/menu.sh"]
+RUN chmod +x ./scripts/menu.sh
+ENTRYPOINT ["bash", "/TrabajoFinalEdP/scripts/menu.sh"]
