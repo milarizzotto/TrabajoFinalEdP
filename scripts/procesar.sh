@@ -2,7 +2,7 @@
 
 function procesar(){
 
-	cd imagenes/imgDescomprimidas
+	cd ./datasets/imagenes/imgDescomprimidas
 	ls -1 | grep ^[A-Z][a-z].*  > prueba.txt
 
 	ITERACIONES=$(wc -l < prueba.txt)
@@ -16,4 +16,5 @@ function procesar(){
 	done
 
 	rm prueba.txt
+	cd ../../..
 }

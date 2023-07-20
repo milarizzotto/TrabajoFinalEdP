@@ -6,8 +6,8 @@ function descomprimir(){
 
 	if [ "$var1" == "$var2" ]
 	then
-		unzip $1 -d ./imagenes/imgDescomprimidas
-		rm -fr ./imagenes/imgDescomprimidas/imgDescomprimidas
+		unzip $1 -d ./datasets/imagenes/imgDescomprimidas
+		rm -fr ./datasets/imagenes/imgDescomprimidas/imgDescomprimidas
 	fi
 }
 
