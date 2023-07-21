@@ -17,7 +17,7 @@ function procesar(){
 	done
 	echo "Se encontraron $ITERACIONES imagenes validas de $CANTIDAD_IMAGENES."
 	if [ $ITERACIONES -ne 0 ]; then
-	echo "Se les cambio la resolución a 512x512"
+	echo "Se les cambio la resolucion a 512x512"
 	fi 
 	rm prueba.txt cantidad.txt
 	cd ../../..
