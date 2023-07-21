@@ -15,8 +15,10 @@ function procesar(){
 	 	NOMBRE=$(sed -n $LINEA prueba.txt) 
 		convert $NOMBRE -gravity center -resize 512x512+0+0 \-extent 512x512 $NOMBRE
 	done
-	echo "Se encontraron $ITERACIONES imágenes válidas de $CANTIDAD_IMAGENES."
-	echo "Se les cambió la resolución a 512x512" 
+	echo "Se encontraron $ITERACIONES imagenes validas de $CANTIDAD_IMAGENES."
+	if [ $ITERACIONES -ne 0 ]; then
+	echo "Se les cambio la resolución a 512x512"
+	fi 
 	rm prueba.txt cantidad.txt
 	cd ../../..
 }
