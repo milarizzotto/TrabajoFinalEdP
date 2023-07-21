@@ -1,6 +1,11 @@
-# TrabajoFinalEdP
-Hola! Este es nuestro trabajo final de Entorno de Programación. Para ejecutar nuestro programa en tu computadora, cloná este repositorio 
-y, dentro de la carpeta "TrabajoFinalEdP", ejecutá los siguientes comandos: 
-docker build -t tp_edp .
-docker run -it -v ~/tp_edp/TrabajoFinalEdP/datasets:/TrabajoFinalEdP/datasets tp_edp
-Luego, ya vas a tener acceso al menú con todas las opciones para que pruebes. 
+# Trabajo Final de Entorno de Programación - Grupo 15
+Hola!  
+Este es nuestro trabajo final de la materia. Para ejecutar nuestro programa en tu computadora, primero cloná este repositorio:  
+1) git clone https://github.com/milarizzotto/TrabajoFinalEdP.git
+
+Luego, dentro de la carpeta "TrabajoFinalEdP", ejecutá los siguientes comandos:  
+
+2) sudo docker build -t tp_edp .  
+3) sudo docker run -it -v ~/tp_edp/TrabajoFinalEdP/datasets:/TrabajoFinalEdP/datasets tp_edp
+
+Con el último comando ya va a estar disponible y corriendo el menú con todas las opciones para que elijas.
